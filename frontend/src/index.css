@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette: soft sage and cream, one dark moss for buttons, a touch of clay */
+  --color-paper: #f6f8f0;
+  --color-snow: #fcfdf9;
+  --color-sage-100: #e8ebdc;
+  --color-sage-200: #dce2cc;
+  --color-sage-300: #c3ccb0;
+  --color-sage-400: #a3b08c;
+  --color-sage-500: #86996f;
+  --color-sage-600: #5f7a4d;
+  --color-sage-700: #46603b;
+  --color-moss-700: #3a5a3b;
+  --color-moss-800: #2f4630;
+  --color-ink: #26302a;
+  --color-clay: #b88f6b;
+  --color-clay-deep: #8b6a4b;
+
+  --font-script: "Alex Brush", cursive;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+section[id] { scroll-margin-top: 4rem; }
+
+::selection { background: var(--color-sage-300); color: var(--color-moss-800); }
+
+:focus-visible {
+  outline: 2px solid var(--color-sage-600);
+  outline-offset: 3px;
+}
+
+/* The hero photo melts into the sage background:
+   downwards on phones, towards the left on desktop. */
+.hero-photo-fade {
+  -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+}
+@media (min-width: 1024px) {
+  .hero-photo-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+  }
+}
+
+/* One orchestrated entrance, for the hero only */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.rise { animation: rise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+.fade-in { animation: fade-in 1.4s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

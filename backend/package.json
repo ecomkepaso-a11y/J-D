@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "RSVP API for the Jessica & Darryl wedding site (sends emails through Brevo)",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20.12" }
+}
