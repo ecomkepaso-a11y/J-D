@@ -9,7 +9,6 @@ Built step by step.
 ```bash
 # 1. backend (no dependencies to install)
 cd backend
-cp .env.example .env      # then paste your Brevo API key in BREVO_API_KEY
 npm run dev               # http://localhost:4000
 
 # 2. frontend (second terminal)
