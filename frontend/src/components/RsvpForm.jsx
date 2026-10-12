@@ -17,6 +17,9 @@ function Field({ label, required, error, children }) {
   );
 }
 
+// Empty in local dev (Vite proxies /api). On Vercel, set VITE_API_URL to the Render backend URL.
+const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+
 const EMPTY = { name: '', email: '', phone: '', attending: 'yes', guests: '1', message: '', website: '' };
 
 export default function RsvpForm() {
@@ -33,7 +36,7 @@ export default function RsvpForm() {
     setServerError('');
     setStatus('sending');
     try {
-      const res = await fetch('/api/rsvp', {
+      const res = await fetch(`${API_URL}/api/rsvp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
