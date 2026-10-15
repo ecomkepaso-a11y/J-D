@@ -5,6 +5,7 @@ import Celebration from './components/Celebration';
 import Invitation from './components/Invitation';
 import RsvpForm from './components/RsvpForm';
 import Footer from './components/Footer';
+import MessageDuCoeur from './components/MessageDuCoeur';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <MessageDuCoeur />
         <Invitation />
         <Gallery />
         <Celebration />

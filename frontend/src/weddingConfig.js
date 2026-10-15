@@ -8,16 +8,18 @@ export const couple = {
   names: 'Jessica Sema & Darryl Ekoume',
   shortNames: 'Jessica & Darryl',
   dateLabel: '12 Décembre 2026',
-  city: 'Douala',
+  city: 'Douala Bonaberi',
   country: 'Cameroun',
   weddingDate: '2026-12-12',
 };
 
 // Details shown in the invitation card and the RSVP form (taken from the Figma design).
 export const event = {
-  title: 'Mariage Religieux',
+  title: 'Mariage Civil',
   dateLabel: '12 décembre 2026',
-  time: 'À partir de 13:00',
+  time: 'À partir de 14:00',
+  mapUrl: 'https://maps.app.goo.gl/54QRAKH9u5hiw6UB9',
+
 };
 
 export const navLinks = [
@@ -51,7 +53,7 @@ export const gallery = [
   {
     src: '/images/water.jpg',
     alt: 'Jessica et Darryl au bord de l’eau au coucher du soleil',
-    caption: 'Regarder dans la même direction.',
+    caption: 'Un amour parfait.',
     shape: 'arch',
     aspect: 'aspect-[0.8]',
     position: 'object-[55%_50%]',

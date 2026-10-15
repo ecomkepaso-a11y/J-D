@@ -19,13 +19,9 @@ export default function Celebration() {
             Retrouvons-nous à {couple.city}.
           </h2>
           <p className="mt-6 max-w-md text-pretty text-[15px] leading-relaxed text-ink/75 sm:text-base">
-            Notre célébration vous attend le {couple.dateLabel.toLowerCase()}. La réception et la soirée se
-            poursuivront dans la convivialité du mariage.
+            Notre célébration vous attend le {couple.dateLabel.toLowerCase()}. Cérémonie suivie d’un cocktail dînatoire
           </p>
-          <p className="mt-7 inline-flex max-w-md items-start gap-3 rounded-2xl bg-paper px-5 py-3.5 text-[14px] leading-snug text-ink/75">
-            <Info size={18} strokeWidth={1.5} className="mt-px shrink-0 text-sage-600" />
-            Les précisions pratiques vous seront partagées prochainement.
-          </p>
+          
         </div>
       </div>
     </section>

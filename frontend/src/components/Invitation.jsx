@@ -1,4 +1,4 @@
-import { CalendarDays, Clock } from 'lucide-react';
+import { CalendarDays, Clock, MapPin, ArrowUpRight } from 'lucide-react';
 import CtaButton from './CtaButton';
 import { event, heroImage, inviteMessage } from '../weddingConfig';
 
@@ -41,13 +41,30 @@ export default function Invitation() {
           <ul className="mt-6 space-y-5">
             <Detail icon={CalendarDays} title={event.dateLabel} hint="Le jour de notre union" />
             <Detail icon={Clock} title={event.time} hint="Réception et soirée à la suite" />
+            <li className="flex items-center gap-4">
+  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-sage-100 text-sage-600">
+    <MapPin size={19} strokeWidth={1.5} />
+  </span>
+  <div>
+    <p className="text-[16px] font-medium text-ink">Lieu de la célébration</p>
+    <a
+      href={event.mapUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1 text-[13px] text-sage-700 underline underline-offset-4 hover:text-moss-800"
+    >
+      Voir sur Google Maps <ArrowUpRight size={13} />
+    </a>
+  </div>
+</li>
           </ul>
+
+
 
           <hr className="my-6 border-sage-200" />
           <p className="text-pretty font-serif text-[1.35rem] italic leading-snug text-moss-800">
             {inviteMessage}
           </p>
-          <p className="mt-5 text-[13px] text-ink/55">Le lieu sera annoncé prochainement.</p>
           <hr className="my-6 border-sage-200" />
           <p className="text-[14px] leading-relaxed text-ink/70">
             Après la cérémonie, la joie se prolonge autour de la réception et de la soirée.
