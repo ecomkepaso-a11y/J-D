@@ -13,11 +13,11 @@ export const couple = {
   weddingDate: '2026-12-12',
 };
 
-// Details shown in the invitation card and the RSVP form (taken from the Figma design).
+// Details shown in the invitation card and the RSVP form.
 export const event = {
   title: 'Mariage Civil',
   dateLabel: '12 décembre 2026',
-  time: 'À partir de 14:00',
+  time: '14:00',
   mapUrl: 'https://maps.app.goo.gl/54QRAKH9u5hiw6UB9',
 
 };

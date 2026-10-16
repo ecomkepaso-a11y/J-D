@@ -24,7 +24,7 @@ export default function MessageDuCoeur() {
         <div className="mt-8 rounded-[2rem] border border-sage-200 bg-snow px-7 py-9 shadow-[0_24px_50px_-34px_rgba(47,70,48,0.55)] sm:px-12">
           <p className="font-serif text-[1.2rem] leading-[1.9] text-ink/85 sm:text-[1.35rem]">
             Vous êtes cordialement invités à la célébration de notre mariage et nous serons ravis de partager ce
-            nouveau chapitre de notre vie avec ceux qui nous sont les plus chers.
+            nouveau chapitre de notre vie avec vous.
           </p>
         </div>
       </div>

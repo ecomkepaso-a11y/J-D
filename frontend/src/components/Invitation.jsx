@@ -40,7 +40,7 @@ export default function Invitation() {
 
           <ul className="mt-6 space-y-5">
             <Detail icon={CalendarDays} title={event.dateLabel} hint="Le jour de notre union" />
-            <Detail icon={Clock} title={event.time} hint="Réception et soirée à la suite" />
+            <Detail icon={Clock} title={event.time} hint="Cérémonie suivie d’un cocktail dînatoire" />
             <li className="flex items-center gap-4">
   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-sage-100 text-sage-600">
     <MapPin size={19} strokeWidth={1.5} />
