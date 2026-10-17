@@ -46,7 +46,7 @@ export default function Invitation() {
     <MapPin size={19} strokeWidth={1.5} />
   </span>
   <div>
-    <p className="text-[16px] font-medium text-ink">Lieu de la célébration</p>
+    <p className="text-[16px] font-medium text-ink">Cafrad Bonaberi ( Derrière Hôtel Royal Palace )</p>
     <a
       href={event.mapUrl}
       target="_blank"
@@ -67,7 +67,7 @@ export default function Invitation() {
           </p>
           <hr className="my-6 border-sage-200" />
           <p className="text-[14px] leading-relaxed text-ink/70">
-            Après la cérémonie, la joie se prolonge autour de la réception et de la soirée.
+            Après la cérémonie, la joie se prolonge autour D’un cocktail dînatoire.
           </p>
         </div>
       </article>

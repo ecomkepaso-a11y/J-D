@@ -20,7 +20,7 @@ function Field({ label, required, error, children }) {
 // Empty in local dev (Vite proxies /api). On Vercel, set VITE_API_URL to the Render backend URL.
 const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
 
-const EMPTY = { name: '', email: '', phone: '', attending: 'yes', guests: '1', message: '', website: '' };
+const EMPTY = { name: '', phone: '', attending: 'yes', guests: '1', message: '', website: '' };
 
 export default function RsvpForm() {
   const [form, setForm] = useState(EMPTY);
@@ -99,20 +99,6 @@ export default function RsvpForm() {
               value={form.name}
               onChange={set('name')}
               placeholder="Votre prénom et votre nom"
-            />
-          </Field>
-
-          <Field label="Adresse e-mail" required error={errors.email}>
-            <input
-              className={`${field} mt-2`}
-              type="email"
-              name="email"
-              autoComplete="email"
-              required
-              maxLength={254}
-              value={form.email}
-              onChange={set('email')}
-              placeholder="Votre adresse e-mail"
             />
           </Field>
 

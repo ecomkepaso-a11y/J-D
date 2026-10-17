@@ -6,6 +6,7 @@ import Invitation from './components/Invitation';
 import RsvpForm from './components/RsvpForm';
 import Footer from './components/Footer';
 import MessageDuCoeur from './components/MessageDuCoeur';
+import ThemeEtCadeaux from './components/ThemeEtCadeaux';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Invitation />
         <Gallery />
         <Celebration />
+        <ThemeEtCadeaux />
         <RsvpForm />
       </main>
       <Footer />

@@ -17,7 +17,7 @@ export const couple = {
 export const event = {
   title: 'Mariage Civil',
   dateLabel: '12 décembre 2026',
-  time: '14:00',
+  time: 'À 14h précises',
   mapUrl: 'https://maps.app.goo.gl/54QRAKH9u5hiw6UB9',
 
 };
